@@ -1,3 +1,16 @@
+<?php
+	session_start();
+	$activeUser = null;
+	
+	if(isset($_SESSION['activeUser'])) {
+		$activeUser =  $_SESSION['activeUser'];
+	}
+	else
+	{
+		header("Location:login.php");
+	} 
+    require_once("../Path.php");
+?> 
 <!doctype html>
 <html>
 	<head>

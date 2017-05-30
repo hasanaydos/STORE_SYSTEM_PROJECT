@@ -1,0 +1,18 @@
+
+{
+   "product_id"			:1324,
+   "product_name"		:"ornek_name",
+   "product_quantity"	:15,
+   "registration_image"	:"image.jpg",
+   "registration_date"	:"01.01.2017",
+   "properties"	: [
+					{
+						"property_name_1" : "property_value_1",
+						"property_name_2" : "property_value_2",
+						"property_name_3" : "property_value_3",
+						"property_name_n" : "property_value_n"
+						 
+					}
+				  ]
+}
+ 

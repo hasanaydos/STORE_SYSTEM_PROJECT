@@ -74,13 +74,20 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .sidebar1 {
 	float: left;
 	width: 20%;
-	//background-color: #00a1ff;
+	/*background-color: #00a1ff;*/
 	padding-bottom: 10px;
 }
 .content {
 	padding: 10px 0;
 	width: 80%;
 	float: left;
+}
+.margin{
+    margin: 40px;
+}
+
+.left_right{
+	float:left;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
@@ -105,7 +112,7 @@ ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your li
 	color: #000;
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
-	//background-color: #6F7D94;
+	/*background-color: #6F7D94;*/
 	background-color: rgb(143, 212, 253);
 	color: #FFF;
 }

@@ -1,3 +1,20 @@
+<?php
+	session_start();
+        
+        require_once("../Path.php");    
+        require_once(PATH."LogicLayer/AdminManager.php");
+        
+	$activeUser = null;
+	
+	if(isset($_SESSION['activeUser'])) {
+		$activeUser =  $_SESSION['activeUser'];
+                //echo 'username session : ' . $_SESSION['activeUser'];
+	}
+	else
+	{
+		header("Location:login.php");
+	} 
+?> 
 <!doctype html>
 <html>
 	<head>

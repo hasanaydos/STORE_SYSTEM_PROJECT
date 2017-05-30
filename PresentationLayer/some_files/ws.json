@@ -1,0 +1,86 @@
+{
+    "product": {
+        "p_id": "888",
+        "p_name": null,
+        "quantity": null,
+        "reg_date": null,
+        "properties": [
+            {
+                "name_0": 10
+            },
+            {
+                "name_1": 11
+            },
+            {
+                "name_2": 12
+            },
+            {
+                "name_3": 13
+            },
+            {
+                "name_4": 14
+            }
+        ]
+    }
+}	
+
+{
+"product":{
+"p_id":"888",
+        "p_name":null,
+        "quantity":null,
+        "reg_date":null,
+        "properties":[
+        {"property":"property_0", "value":"value_0"},
+        {"property":"property_1", "value":"value_1"},
+        {"property":"property_2", "value":"value_2"},
+        {"property":"property_3", "value":"value_3"},
+        {"property":"property_4", "value":"value_4"}
+        ]
+}
+}
+
+{
+    "product":{
+                "id":"888",
+                "name":null,
+                "quantity":null,
+                "properties":[	
+                                ["property_0", "value_0"],
+                                ["property_1", "value_1"],
+                                ["property_2", "value_2"],
+                                ["property_3", "value_3"],
+                                ["property_4", "value_4"]
+                ]
+     }
+}
+
+$data = ' 
+                "senderName"    = '.$senderName.'& 
+                "receiverName"  = '.$receiverName.'&
+                "weight"        = '.$weight.'&
+                "volume"        = '.$volume.'&
+                "breakable"     = '.$breakable.'&
+                "cargoDetail"   = '.$cargoDetail.'&
+                "sCity"         = '.$sCity.'&
+                "sCountry"      = '.$sCountry.'&
+                "sDetail"       = '.$sDetail.'&
+                "dCity"         = '.$dCity.'&
+                "dCountry"      = '.$dCountry.'&
+                "dDetail"       = '.$dDetail; 
+
+ $data = array(
+                    "senderName"    => $senderName, 
+                    "receiverName"  => $receiverName,
+                    "weight"        => $weight,
+                    "volume"        => $volume,
+                    "breakable"     => $breakable,
+                    "cargoDetail"   => $cargoDetail,
+                    "sCity"         => $sCity,
+                    "sCountry"      => $sCountry,
+                    "sDetail"       => $sDetail,
+                    "dCity"         => $dCity,
+                    "dCountry"      => $dCountry,
+                    "dDetail"       => $dDetail
+                 ); 
+    $dataJSON = json_encode($data);

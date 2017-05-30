@@ -1,12 +1,18 @@
 <?php
+
 		echo '
 			<div class="header">
 				<a href="main.php">
 					STORE SYSTEM
-				</a>
+				</a>	
 				<a class="logout" href="logout.php">
-					LogOut
-				</a> 			
+					 | LogOut
+				</a> 	
+                                
+				<a class="logout" href="profile.php">
+					Welcome '.$activeUser.' 
+				</a> 	
+                                	
 			</div><!-- end .header -->
 		';
 ?>

@@ -1,10 +1,24 @@
+<?php
+	session_start();
+        
+	$activeUser = null;
+	
+	if(isset($_SESSION['activeUser'])) {
+		$activeUser =  $_SESSION['activeUser'];
+	}
+	else
+	{
+		header("Location:login.php");
+	}
+         
+    require_once("../Path.php");
+?> 
 <!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>Store System</title>
 		<link href="Css/style.css" rel="stylesheet" type="text/css">
-		
 	</head>
 
 	<body>
